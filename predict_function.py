@@ -39,7 +39,7 @@ def predict_image_mask_pixel(model, image, mask, mean=[0.485, 0.456, 0.406], std
 
 def miou_score(model, test_set):
     score_iou = []
-    for i in range(len(test_set)):
+    for i in tqdm(range(len(test_set))):
         img, mask = test_set[i]
         pred_mask, score = predict_image_mask_miou(model, img, mask)
         score_iou.append(score)
@@ -47,7 +47,7 @@ def miou_score(model, test_set):
 
 def pixel_acc(model, test_set):
     accuracy = []
-    for i in range(len(test_set)):
+    for i in tqdm(range(len(test_set))):
         img, mask = test_set[i]
         pred_mask, acc = predict_image_mask_pixel(model, img, mask)
         accuracy.append(acc)
