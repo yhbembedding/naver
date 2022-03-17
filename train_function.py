@@ -32,7 +32,7 @@ def train(epochs, model, train_loader, val_loader, criterion, optimizer, schedul
         accuracy = 0
         # training loop
         model.train()
-        for i, data in enumerate(train_loader):
+        for i, data in enumerate(tqdm(train_loader)):
             # training phase
             image_tiles, mask_tiles = data
 
