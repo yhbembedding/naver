@@ -2,7 +2,6 @@
 Ptit x Naver
 ## About the project
 Indoor Segmantic segmentation
-pip install -r requirements.txt
 
 ### set up env
 python >=3.6
