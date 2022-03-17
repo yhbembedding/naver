@@ -1,0 +1,16 @@
+albumentations==1.1.0
+matplotlib==3.3.4
+numpy==1.19.5
+opencv-python==4.5.5.62
+opencv-python-headless==4.5.5.64
+pandas==1.1.5
+Pillow==8.4.0
+scikit-image==0.17.2
+scikit-learn==0.24.2
+scipy==1.5.4
+segmentation-models-pytorch==0.2.1
+torch==1.9.0+cu102
+torchaudio==0.9.0
+torchsummary==1.5.1
+torchvision==0.10.0+cu102
+tqdm==4.62.3
